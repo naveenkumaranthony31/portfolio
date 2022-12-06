@@ -1,38 +1,409 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: rgb(90, 88, 88);
+}
+* {
+  margin: 0;
+  padding: 0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  box-sizing: border-box;
+  /*background-image: url("/src/img/Picsart_22-11-20_14-04-55-997.jpg");*/
+}
+/*#home {
+  height: 800px;
+  margin-top: 130px;
+}*/
+
+/*Navbar*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  /*background-color: rgba(231, 225, 225, 0.5);*/
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+  left: 10px;
+}
+.navbar ul li a:hover {
+  background-color: rgb(255, 0, 234, 0.801);
+  color: rgba(0, 0, 0, 0.952);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+/*Home section*/
+.heading {
+  position: relative;
+  right: 40%;
+ margin-top: -7%;
+  font-weight: 400;
+  transition: transform 0.5s;
+}
+.heading:hover {
+  color: rgba(255, 0, 234, 0.801);
+  transform: translateY(-5px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.namenavi {
+  position: relative;
+  left: 10px;
+  margin-top: -56px;
+  color: rgba(255, 0, 234, 0.801);
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: scale(2);
+  letter-spacing: 0.5px;
+}
+.namenaveen {
+  position: relative;
+  left: 10px;
+  margin-top: -18px;
+  color: rgb(48, 47, 47);
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: scale(2);
+  letter-spacing: 0.5px;
+}
+.paragaraph {
+  position: relative;
+  top: 40px;
+  right: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black(0, 0, 0, 0.5);
+
+  height: 640px;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("/src/img/Picsart_22-11-20_15-15-11-614.jpg") no-repeat center
+    center/cover;
+  height: 800px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top: 20%;
+  left: 8%;
+}
+.homeanimation {
+  position: absolute;
+  top: 50%;
+  height: 600px;
+  width: 600px;
+  right: 30%;
+}
+
+@media only screen and (max-width: 476px) {
+  .heading {
+    position: relative;
+    right: 40%;
+   margin-top: -7%;
+    font-weight: 200;
+    transition: transform 0.5s;
+  }
+  .heading:hover {
+    color: rgba(255, 0, 234, 0.801);
+    transform: translateY(-5px);
+  }
+  .namenaveen{
+    position: relative;
+  margin-right: 25%;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .namenavi{
+    margin-right: 25%;
+    margin-top: -20px;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .paragaraph{
+    width: 300px;
+   right: 10px;
+    font-size: 20px;
+    top: 8px;
+float: inline-end;
+  }
+}
+
+/*about*/
+
+.conatainer {
+  background-color: rgb(90, 88, 88);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.details {
+  position: relative;
+  top: 5%;
+}
+.details h2 {
+  color: white;
+  text-decoration: underline;
+}
+.parah {
+  color: white;
+  font-size: 20px;
+}
+.abt {
+  color: rgb(43, 224, 224);
+}
+.list {
+  font-size: 22px;
+}
+.li {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.mainli {
+  color: rgb(43, 224, 224);
+}
+.empty {
+  color: black;
+}
+.ins-fac {
+  display: flex;
+  height: 25%;
+  width: 25%;
+}
+/*skills*/
+.inner {
+  padding-top: 20px;
+}
+.header {
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+  border-radius: 2px;
+}
+.ctrr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+.skill-box:hover > .skill-title::after,
+.skill-box:hover > .skill-title::before {
+  width: 35px;
+}
+.skill-box:hover .img {
+  transform: translateY(-10px);
+}
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.skill-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #2ecc71;
+  transition: 0.5s;
+}
+.skill-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 0 2px;
+  background-color: #2ecc71;
+  transition: 0.5s;
+}
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45px;
+}
+.skill-title h3 {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.skill-icon {
+  width: 50px;
+}
+/*projects*/
+#Contact {
+  margin-top: 30px;
+}
+.proheading {
+  padding-left: 10%;
+  margin-bottom: 5%;
+  color: aqua;
+}
+/*contact*/
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 30px;
+  font-size: 23px;
+  font-family: serif;
+}
+.contact-left p .icons {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons {
+  margin-top: 30p;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.contact-right form {
+  width: 100%;
+}
+.btn {
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form button {
+  background: #202020;
+  border-radius: 10px;
+}
+form .click {
+  text-decoration: none;
+  padding: 14px 60px;
+  font-size: 18px;
+  color: #ababab;
+  margin-top: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#click {
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+#click:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.click {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.click:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
 }
