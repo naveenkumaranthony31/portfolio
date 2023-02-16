@@ -127,13 +127,8 @@ body {
   right: 30%;
 }
 
-@media only screen and (max-width: 476px) {
-  .heading {
-    position: relative;
-    right: 40%;
-   margin-top: -7%;
-    font-weight: 200;
-    transition: transform 0.5s;
+/* @media only screen and (min-width: 1800px) {
+
   }
   .heading:hover {
     color: rgba(255, 0, 234, 0.801);
@@ -159,8 +154,8 @@ body {
     font-size: 20px;
     top: 8px;
 float: inline-end;
-  }
-}
+  } */
+
 
 /*about*/
 
@@ -314,6 +309,9 @@ float: inline-end;
   padding-left: 10%;
   margin-bottom: 5%;
   color: aqua;
+}
+.card{
+  margin-top: 20px;
 }
 /*contact*/
 .contact-left {

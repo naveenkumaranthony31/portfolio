@@ -7,9 +7,9 @@ function Projects() {
         
         {
           id: 1,
-         projectName: `Mobile-Shopping`,
-         animation:"../projects/mobile-shopping.gif",
-         app:"https://leafy-crisp-b8111f.netlify.app/",
+          projectName: 'Simple Blogger',
+          animation:"../projects/blogger 1.gif",
+          app:"https://blogger-frontend.onrender.com/"
          
         },
        
@@ -28,6 +28,15 @@ function Projects() {
             app:"https://super-sherbet-e5a4b0.netlify.app/"
             
             
+          },
+          {
+            
+          id: 4,
+          projectName: `Mobile-Shopping`,
+          animation:"../projects/mobile-shopping.gif",
+          app:"https://leafy-crisp-b8111f.netlify.app/",
+          
+            
           }
           
         ]
@@ -35,7 +44,7 @@ function Projects() {
   return (
     <>
     <Navbar></Navbar>
-    <div className='mian'>
+    <div className='main'>
     <h1 className='proheading'>PROJECTS</h1>
     <div className="container">
         <div className="row">
