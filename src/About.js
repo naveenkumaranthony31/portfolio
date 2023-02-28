@@ -3,11 +3,15 @@ import Lottie from "lottie-react";
 import cycling from "./cycling.json";
 // import instagram from "./instagram.json";
 import github from "./github.json";
+import { useNavigate } from "react-router-dom";
+
 // import Facbook from "./facebook.json";
 import Navbar from './Navbar';
 
 //import {Link} from "react-router-dom";
-export default function About() {
+ function About() {
+  const navigate = useNavigate();
+  navigate("/About");
   return (
     <>
     <Navbar></Navbar>
@@ -58,3 +62,4 @@ export default function About() {
       </>
   );
 }
+export default About;

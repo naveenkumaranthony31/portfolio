@@ -15,11 +15,12 @@ function App() {
 
   return(
     <>
+    
    <BrowserRouter>
        
           <Routes>
           <Route path="/" element={<Home />}/>
-       <Route path="about" element={<About />} />
+       <Route path="/about" element={<About />} />
             <Route path="skill" element={<Skills />} />
             <Route path="Projects" element={<Projects />} />
             <Route path="about" element={<About />} />
