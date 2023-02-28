@@ -1,27 +1,31 @@
 import React from 'react'
-import {Link} from "react-router-dom";
-
+// import {Link} from "react-router-dom";
+// import Lottie from "lottie-react";
+// import manubutton from"./menu.json";
+// import closebutton from"./menuclose.json";
 function Navbar() {
   return (
     <>
       <nav class="navbar">
         <ul>
           <li>
-          <Link to="/">Home</Link>
+          <a href="/">Home</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="/about">About</a>
           </li>
           <li>
-          <Link to="/skill">Skills</Link>
+          <a href="/skill">Skills</a>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <a href="/Projects">Projects</a>
           </li>
           <li>
-          <Link to="/Contact">Contact</Link>
+          <a href="/Contact">Contact</a>
           </li>
-        </ul>
+          {/* <Lottie className="menuanimation" animationData={closebutton}/> */}
+       </ul>
+       {/* <Lottie className="menuanimation" animationData={manubutton}/> */}
       </nav>
     </>
   )

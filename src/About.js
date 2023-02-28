@@ -1,9 +1,9 @@
 import React from "react";
 import Lottie from "lottie-react";
 import cycling from "./cycling.json";
-import instagram from "./instagram.json";
+// import instagram from "./instagram.json";
 import github from "./github.json";
-import Facbook from "./facebook.json";
+// import Facbook from "./facebook.json";
 import Navbar from './Navbar';
 
 //import {Link} from "react-router-dom";
@@ -41,14 +41,14 @@ export default function About() {
                     "https://github.com/naveenkumaranthony31?tab=repositories",
                     "_blank")} animationData={github} />
            
-           <Lottie className="aboutanimation"  onClick={() =>
+           {/* <Lottie className="aboutanimation"  onClick={() =>
                   window.open(
                     "https://www.instagram.com/naveenthiwary20/",
                     "_blank")} animationData={instagram} />
                      <Lottie className="aboutanimation animation2"  onClick={() =>
                   window.open(
                     "https://www.facebook.com/profile.php?id=100004804560166",
-                    "_blank")} animationData={Facbook} />
+                    "_blank")} animationData={Facbook} /> */}
                    </div>
             </div>
             
