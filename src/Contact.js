@@ -13,7 +13,7 @@ function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_rifei2p', 'template_o6m4opj', e.target, 'nII7AWRtMY9BtxBGG')
+      emailjs.sendForm('service_pkq4e16', 'template_6n9f1yn', e.target, 'PkORJKN7GElvJ-bBt')
         .then((msg) => {
             msg="Message sent successfully"
             setTimeout(function () {
@@ -48,7 +48,7 @@ function Contact() {
     <div className='contact-right'>
 <form  onSubmit={sendEmail} >
     <input type="text" name="Name" placeholder='Your Name' required></input>
-    <input type="email" name="Email" placeholder='Your Email' required></input>
+    <input type="email" name="user_email" placeholder='Your Email' required></input>
     <textarea name='Message' rows='6' placeholder='Your Message'></textarea>
     <button type='submit' class="click" >Submit</button>
 </form>
