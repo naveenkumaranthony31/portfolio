@@ -1,5 +1,5 @@
 import React from 'react'
-// import {Link} from "react-router-dom";
+ import {Link} from "react-router-dom";
 // import Lottie from "lottie-react";
 // import manubutton from"./menu.json";
 // import closebutton from"./menuclose.json";
@@ -9,19 +9,19 @@ function Navbar() {
       <nav class="navbar">
         <ul>
           <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-          <a href="/skill">Skills</a>
+          <Link to="/skill">Skills</Link>
           </li>
           <li>
-            <a href="/Projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-          <a href="/Contact">Contact</a>
+          <Link to="/contact">Contact</Link>
           </li>
           {/* <Lottie className="menuanimation" animationData={closebutton}/> */}
        </ul>
