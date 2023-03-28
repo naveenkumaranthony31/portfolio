@@ -12,16 +12,16 @@ function Navbar() {
           <a href="/" target="_blank">Home</a>
          </li>
           <li>
-          <a href="/about" target="_blank">About</a>
+          <a href="about" target="_blank">About</a>
            </li>
           <li>
-          <a href="/skill" target="_blank">Skills</a>
+          <a href="skill" target="_blank">Skills</a>
           </li>
           <li>
-          <a href="/Projects" target="_blank">Projects</a>
+          <a href="rojects" target="_blank">Projects</a>
            </li>
           <li>
-          <a href="/contact" target="_blank">Contact</a>
+          <a href="contact" target="_blank">Contact</a>
           </li>
           {/* <Lottie className="menuanimation" animationData={closebutton}/> */}
        </ul>
