@@ -18,7 +18,7 @@ function Navbar() {
           <a href="/skill" target="_blank">Skills</a>
           </li>
           <li>
-          <a href="/projects" target="_blank">Projects</a>
+          <a href="/Projects" target="_blank">Projects</a>
            </li>
           <li>
           <a href="/contact" target="_blank">Contact</a>
