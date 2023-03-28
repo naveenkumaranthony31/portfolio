@@ -9,24 +9,28 @@ function Projects() {
           id: 1,
           projectName: 'Simple Blogger',
           animation:"../projects/blogger 1.gif",
-          app:"https://blogger-frontend.onrender.com/"
-         
+          app:"https://blogger-frontend.onrender.com/",
+          frontend:"https://github.com/naveenkumaranthony31/blogger_app",
+          backend:"https://github.com/naveenkumaranthony31/blogger_backend",
+          isEnable: true
         },
        
         {
             id: 2,
             projectName: 'Simple Booking App',
             animation:"../projects/movie.gif",
-            app:"https://guvi-hackathon2-frontend-dun.vercel.app/"
-            
+            app:"https://guvi-hackathon2-frontend-dun.vercel.app/",
+            frontend:"https://github.com/naveenkumaranthony31/guvi-hackathon2-frontend",
+          backend:"https://github.com/naveenkumaranthony31/guvi-hackathon2-backend",
+          isEnable: true
             
           },
           {
             id: 3,
             projectName: 'Admin Page',
             animation:"../projects/admin.gif",
-            app:"https://super-sherbet-e5a4b0.netlify.app/"
-            
+            app:"https://super-sherbet-e5a4b0.netlify.app/",
+            isEnable: false
             
           },
           {
@@ -35,7 +39,7 @@ function Projects() {
           projectName: `Mobile-Shopping`,
           animation:"../projects/mobile-shopping.gif",
           app:"https://leafy-crisp-b8111f.netlify.app/",
-          
+          isEnable: false
             
           }
           

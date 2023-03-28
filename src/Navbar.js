@@ -9,19 +9,19 @@ function Navbar() {
       <nav class="navbar">
         <ul>
           <li>
-          <Link to="/">Home</Link>
+          <a href="/" target="_blank">Home</a>
+         </li>
+          <li>
+          <a href="/about" target="_blank">About</a>
+           </li>
+          <li>
+          <a href="/skill" target="_blank">Skills</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
+          <a href="/projects" target="_blank">Projects</a>
+           </li>
           <li>
-          <Link to="/skill">Skills</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-          <Link to="/contact">Contact</Link>
+          <a href="/contact" target="_blank">Contact</a>
           </li>
           {/* <Lottie className="menuanimation" animationData={closebutton}/> */}
        </ul>

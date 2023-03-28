@@ -48,14 +48,13 @@ body {
   color: rgba(0, 0, 0, 0.952);
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
-.menuanimation{
+.menuanimation {
   /* display: none; */
   top: 0;
   height: 50px;
   width: 50x;
 }
-@media only screen and (max-width:600px) {
- 
+@media only screen and (max-width: 600px) {
   /* .menuanimation{
     display: block;
    font-size: 25px;
@@ -79,7 +78,7 @@ body {
 .heading {
   position: relative;
   right: 40%;
- margin-top: -7%;
+  margin-top: -7%;
   font-weight: 400;
   transition: transform 0.5s;
 }
@@ -154,22 +153,20 @@ body {
   right: 30%;
 }
 
-@media only screen and (max-width:600px) {
-
+@media only screen and (max-width: 600px) {
   #home {
     display: flex;
     flex-direction: column;
-  background-color: black(0, 0, 0, 0.5);
-  
+    background-color: black(0, 0, 0, 0.5);
   }
   #home::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    background: url("/src/img/Picsart_22-11-20_15-15-11-614.jpg") no-repeat center
-      center/cover;
-   
+    background: url("/src/img/Picsart_22-11-20_15-15-11-614.jpg") no-repeat
+      center center/cover;
+
     z-index: -1;
     opacity: 0.8;
   }
@@ -184,7 +181,7 @@ body {
   .heading {
     position: relative;
     right: 35%;
-   margin-top: -7%;
+    margin-top: -7%;
     font-weight: 400;
     transition: transform 0.5s;
   }
@@ -221,9 +218,9 @@ body {
     content: "\a";
     font-size: 15px;
     top: 25px;
-   left: -14px;
+    left: -14px;
   }
-  
+
   .homeanimation {
     position: absolute;
     top: 60%;
@@ -271,11 +268,26 @@ body {
 .empty {
   color: black;
 }
-.ins-fac {
-  display: flex;
-  height: 25%;
-  width: 25%;
+.social-icons1 a {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-inline-end: 20px;
+  color: rgb(43, 224, 224);
+  transition: transform 0.5s;
 }
+.social-icons1 a:hover {
+  color: black;
+  transform: translateY(-5px);
+}
+.aboutimg {
+  width: 7%;
+  height: 7%;
+}
+.aboutimg1 {
+  width: 7%;
+  height: 7%;
+}
+
 /*skills*/
 .inner {
   padding-top: 20px;
@@ -384,10 +396,58 @@ body {
 .proheading {
   padding-left: 10%;
   margin-bottom: 5%;
-  color: aqua;
+  color: rgb(171, 235, 231);
 }
-.card{
+.card {
   margin-top: 20px;
+}
+.liveproject{
+  width: 100%;
+  background-color: rgb(171, 235, 231);
+ 
+}
+.liveproject:hover{
+  width: 100%;
+  background-color: white;
+}
+.liveproject1{
+margin-top: 10px;
+  width: 40%;
+  margin-inline-start: 20px;
+  background-color: rgb(171, 235, 231);
+}
+.liveproject1:hover{
+  margin-top: 10px;
+  width: 40%;
+  margin-inline-start: 20px;
+  background-color: white;
+ 
+}
+.liveproject2{
+  margin-left: 70px;
+  align-items: center;
+  margin-top: 10px;
+    width: 40%;
+    background-color: rgb(171, 235, 231);
+  }
+.livein{
+  text-decoration: none;
+  font-size: 20px;
+  color:black;
+  
+}
+.livein1{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 10px;
+}
+.livein2{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 10px;
+  align-items: center;
 }
 /*contact*/
 .contact-left {
