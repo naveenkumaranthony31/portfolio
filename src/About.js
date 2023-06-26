@@ -4,13 +4,11 @@ import cycling from "./cycling.json";
 // import instagram from "./instagram.json";
 import github from "./github.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-//import { faLinkedin } from '@fortawesome/free-solid-svg-icons'
-
-// import Facbook from "./facebook.json";
+import { faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./Navbar";
-
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 //import {Link} from "react-router-dom";
+
 function About() {
   return (
     <>
@@ -52,6 +50,14 @@ function About() {
                 >
                   <FontAwesomeIcon class="aboutimg1" icon={faLinkedin} />
                 </a>
+                <a
+                href="https://drive.google.com/file/d/1mQrJP9XWmqhUlrCRhCsUijK_kazcHKoV/view?usp=share_link"
+                target="_blank"
+                download
+                
+              >
+               <FontAwesomeIcon class="aboutimg" icon={faDownload} />
+              </a>
                 </div>
               </div>
             </div>

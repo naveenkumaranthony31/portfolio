@@ -29,8 +29,10 @@ function Projects() {
             id: 3,
             projectName: 'Admin Page',
             animation:"../projects/admin.gif",
-            app:"https://super-sherbet-e5a4b0.netlify.app/",
-            isEnable: false
+            app:"https://crud-method.vercel.app/",
+            frontend:"https://github.com/naveenkumaranthony31/crud_method",
+            backend:"https://github.com/naveenkumaranthony31/crud_backend",
+            isEnable: true
             
           },
           {

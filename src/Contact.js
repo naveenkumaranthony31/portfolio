@@ -74,7 +74,7 @@ function Contact() {
                 </a>
               </div>
               <a
-                href="https://drive.google.com/file/d/16sDzc2ncNQpm91-ReKmLW4U7wqHh0ww6/view?usp=share_link"
+                href="https://drive.google.com/file/d/1mQrJP9XWmqhUlrCRhCsUijK_kazcHKoV/view?usp=share_link"
                 target="_blank"
                 download
                 id="click"
